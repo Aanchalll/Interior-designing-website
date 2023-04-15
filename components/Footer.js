@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col space-y-1 md:space-y-0 md:flex-row justify-between 
         md:items-center">
           <div>
-            <p>&copy; Aanchal Sahu. All Rights Reserved.</p>
+            <p>&copy; Arpan Decores. All Rights Reserved.</p>
           </div>
           <div>
             {/* Support me by keeping this in the footer, please. :) */}
@@ -19,9 +19,9 @@ export default function Footer() {
               <div className="inline-block transform hover:scale-110 hover:-rotate-3 transition duration-300">
                 <a
                   className="hover:bg-red-500 rounded-md px-2 py-1  hover:text-gray-50"
-                  href={userData?.socialLinks?.linkedin}
+                  href={"https://www.linkedin.com/in/aanchal-sahu-"}
                 >
-                  Aanchal Sahu
+                  AS
                 </a>
               </div>
             </div>

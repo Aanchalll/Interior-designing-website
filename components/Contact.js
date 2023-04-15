@@ -36,7 +36,7 @@ export default function Contact() {
           <div className="md:ml-4">
             <header className="">
               <h1 className="text-gray-80 font-semibold text-xl md:text-3xl ">
-                Get in touch, let's talk.
+                Want to know more?
               </h1>
               <p className="font-light text-xl text-gray-700 mt-1">
                 {/* Fill in the details and I'll get back to you as soon as I can. */}
@@ -101,7 +101,7 @@ export default function Contact() {
             className="hidden md:max-w-sm md:block" />
           </>
         </div>
-        <button onClick={() => { saveOnClick() }}>save</button>
+        {/* <button onClick={() => { saveOnClick() }}>save</button> */}
       </div>
     </section>
   );

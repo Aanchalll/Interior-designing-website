@@ -58,66 +58,31 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="justify-center flex flex-col md:flex-row my-1 md:my-10 text-center" onClick={() => { setFire(!fire) }}>
+    <div className="justify-center flex flex-col md:flex-row my-1 md:my-0 text-center" onClick={() => { setFire(!fire) }}>
       <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles} colors={['#A020F0']} />
 
       {/* Text container*/}
-      <div className="mx-auto text-center md:text-center px-4 lg:p-20">
-        <RoughNotationGroup show={true}>
-          {/* <RainbowHighlight color={colors_hey[1]}>
-            <h1 className="text-xl md:text-5xl font-bold text-black dark:text-white my-2">
-              <button
-              //  onClick={pauseAnimation}
-              >Hello!</button>
-            </h1>
-          </RainbowHighlight> */}
-          <RainbowHighlight color={colors_hey[0]}>
-            <h3 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-gray-200 my-0 md:my-2 px-5 ">
-              Hey! I'm Aanchal.
-            </h3>
-          </RainbowHighlight>
-          <RainbowHighlight color={colors_hey[0]}>
-            <h3 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-gray-200 my-2 px-5 ">
-            I'm a  Software Developer.
-            </h3>
-          </RainbowHighlight>
-          <RainbowHighlight color={colors_hey[0]}>
-            <h1 className="text-md md:text-xl font-400 text-black dark:text-white my-5">
-             I've a zest for building web applications and learning new things everyday<br/> 
-             (how do you think I got to know this confetti library anyway)!
-            </h1>
-          </RainbowHighlight>
-        </RoughNotationGroup>
-      </div>
-      {/* Image container */}
-      <div className=" lg:block  lg:w-1/2 md:w-1/2  flex justify-center text-center self-center ">
+      <div className="mx-auto text-center md:text-center px-4 lg:p-0">
+        <h1 className="text-3xl md:text-4xl font-600 text-black dark:text-white my-1">
+          Services We Provide
+        </h1>
+        {/* <h1 className="text-md md:text-xl font-400 text-black dark:text-white my-1"> */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-7 p-10 md:py-20 ">
 
-        <div className=" border-spacing-7 border-l-pink-7 self-center flex flex-col items-center">
-          {/* // <img src={userData.avatarUrl} alt="avatar" className=" shadow " /> */}
-          <img src={userData.avatarUrl} alt="avatar" 
-          className=" shadow shadow-slate-900 h-[40%] w-[40%] md:h-[50%] md:w-[50%] profile-image rounded-full " />
-          {/* {/* <img src={userData.avatarUrl} alt="avatar" className=" shadow rounded-full  border-t-8 border-b-8 border-t-pink-700 border-b-red-500" />  */}
-          <div className="flex flex-row justify-center md:justify-between mt-4 md:ml-24">
-            <div className="flex flex-row space-x-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-arrow-90deg-up"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"
-                />
-              </svg>
-              <p className="font-mono">That's me</p>
-            </div>
-          </div>
-        </div>
+{userData?.services?.map(
+  (proj,idx)=>{
+    return(
+      <ProjectCard
+              title={proj.title}
+              link={proj.link}
+              imgUrl={proj.imgUrl}
+              number={`${idx + 1}`}
+            />
+    )
+  }
+)}
+     </div>    
       </div>
-
     </div>
   );
 }
@@ -150,3 +115,24 @@ function getAnimationSettings(originXA, originXB) {
     }
   };
 }
+const ProjectCard = ({ title, link, imgUrl, number }) => {
+  return (
+    <a href={link} className=" w-full md:w-full block shadow-2xl">
+      <div className="relative overflow-hidden">
+        <div className="h-55 md:h-72 object-cover">
+          <img
+            src={imgUrl}
+            alt="portfolio"
+            className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
+          />
+        </div>
+        <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+          {title}
+        </h1>
+        <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+          {number.length === 1 ? "0" + number : number}
+        </h1>
+      </div>
+    </a>
+  );
+};

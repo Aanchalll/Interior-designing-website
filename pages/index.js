@@ -6,11 +6,12 @@ import LatestCode from "../components/LatestCode";
 import Hero from "../components/Hero";
 import getLatestRepos from "@lib/getLatestRepos";
 import userData from "@constants/data";
+import AboutMe from "@components/AboutMe";
 
 export default function Home({ repositories }) {
   return (
     <ContainerBlock
-      title="Aanchal Sahu - Developer, Writer, Creator"
+      title="Arpan Decores"
       description="This is a template built specifically for my blog - Creating a developer portfolio that gets you a job."
      
     >

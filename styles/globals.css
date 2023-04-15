@@ -16,9 +16,11 @@ body {
     /* font-family: 'Alkatra', cursive;
      */
      /* font-family: 'Dancing Script', cursive; */
-     font-family: 'Kalam', cursive;
+     font-family: 'Julee', cursive;
+
+     /* font-family: 'Kalam', cursive; */
      /* background:linear-gradient(180deg, #04fafd, 10%, #119dff, 50%, #2228c7) */
-     background:linear-gradient(180deg, #8aecee, 10%, #75c1f8, 60%, #1d2197)
+     background:linear-gradient(180deg, #ffd54d, 10%, #fff281, 60%, #f2ff3b)
 
 }
 a {

@@ -1,12 +1,12 @@
 const userData = {
   githubUsername: "Aanchalll",
-  name: "Aanchal Sahu",
-  designation: "Full-Stack Developer",
-  avatarUrl: "/aanchal.png",
+  name: "Arpan Decores",
+  designation: "World of creation",
+  avatarUrl: "/arpan-decores.jpg",
   contactUrl: "/contact-me-girl.svg",
-  email: "98saanchal@gmail.com",
-  phone: "+91 8770965469",
-  address: "Bhilai, Chhattisgarh, India.",
+  email: "arpanshrivastava@gmail.com",
+  phone: "+91 7587144408",
+  address: "Block 18 Plot, 11, Nehru Nagar East, Bhilai, Chhattisgarh 490020",
   techStack: [
     {
       title: "React JS",
@@ -88,22 +88,10 @@ const userData = {
   ],
   about: {
     title:
-      "I'm a software developer that loves building products and web applications that impact millions of lives",
-    description: [
-      `I've been developing full-stack application since I was 10 years old.
-       I didn't know what full-stack meant at that time because the term was not coined back then. 
-       I'm so out of content right now that I'm literally crying writing this text since lorem text is so 2012 now.`,
-      `After learning HTML and struggling with CSS,
-
-      I came up with a brilliant idea of using bootstrap so that 
-      I don't have to style everything by myself 
-      and - for obvious reasons - if you knew bootstrap, you were cool.`,
-
-      `But now, I'm a legend. I've been coding in React, Angular, Vue, Svelte, Node.js, Express, Fastify,
-       MongoDB, MySQL, Bootstrap, Tailwind, C, C++, C#, Rust, Haskell, Perl, PHP, Assembly, Logo and 
-       YouDontKnowShit programming language etc to name a few. Although I barely know the syntax (Psst, Stack overflow!), 
-       I consider myself a Ninja developer I'm laughing right now.`,
-    ],
+      "Ever wanted something unique or personalized? Then you've found the right place!",
+    description: 
+      `This is a startup company where, from the personalized presents ( like photo frames, wooden engraved picture, popups, etc) to the interior decoration products(like doors, metallic/wooden front gates, mirrors, pergolas, etc), we have it all covered. 
+     `,
     currentProject: "Tailwind Master Kit",
     currentProjectUrl: "https://tailwindmasterkit.com",
   },
@@ -161,12 +149,99 @@ const userData = {
   resumeUrl:
     "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
   socialLinks: {
-    instagram: "https://instagram.com/aan__chal?igshid=ZDdkNTZiNTM=",
-    linkedin: "https://www.linkedin.com/in/aanchal-sahu-",
+    instagram: "https://www.instagram.com/arpandecores/?hl=en",
+    linkedin: "https://www.linkedin.com/company/arpan-decores",
     github: "https://github.com/Aanchalll?tab=repositories",
     facebook: "https://facebook.com/",
     hacker_rank: "https://www.hackerrank.com/98saanchal?hr_r=1"
   },
+  services: [
+    {
+      title: "Interior Designing",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/interior-design.jpg",
+    },
+    {
+      title: "Plasma cutting",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/plasma-cutting.jpg",
+    },
+    {
+      title: " Laser work ",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/laser-cutting.jpg",
+    },
+    {
+      title: "Router work",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/plasma-cutting.jpg",
+    },
+    {
+      title: "Glass work ",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/glass-work.jpg",
+    },
+    {
+      title: "Wall art ",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/wall-art.png",
+    },
+    {
+      title: "Partitions",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/partition.jpg",
+    },
+    {
+      title: "Gates",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/gates.jpg",
+    },
+    {
+      title: "Doors",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/doors.jpg",
+    },
+    {
+      title: "Tables",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/tables.jpg",
+    },
+    {
+      title: "BBQ",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/bbq.jpg",
+    },
+    {
+      title: " Customised gifts ",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/customized-gifts.png",
+    },
+    {
+      title: "Wooden portraits",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/wooden-potraits.jpg",
+    },
+    {
+      title: "Keychains",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/key-chains.png",
+    },
+    {
+      title: "Earrings",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/ear-rings.webp",
+    },
+    {
+      title: " Wedding cards",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/wedding-cards.webp",
+    },
+    {
+      title: "Engraving in all materials",
+      link: "https://legacy.reactjs.org/",
+      imgUrl: "/engravings.jpg",
+    }
+  ]
 };
 
 export default userData;

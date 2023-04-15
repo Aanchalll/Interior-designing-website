@@ -79,7 +79,7 @@ export default function Navbar() {
               </svg>
             )}
           </Link> */}
-          <Link
+          {/* <Link
             href="/techstack"
             className={`text-base  ${
               router.asPath === "/techstack"
@@ -103,17 +103,17 @@ export default function Navbar() {
                 />
               </svg>
             )}
-          </Link>
+          </Link> */}
           <Link
-            href="/experience"
+            href="/about"
             className={`text-base  ${
-              router.asPath === "/experience"
+              router.asPath === "/about"
                 ? "text-black font-bold dark:text-gray-400"
                 : "text-gray-900 dark:text-gray-300 font-normal "
             }`}
           >
-            Experience{" "}
-            {router.asPath === "/experience" && (
+            About{" "}
+            {router.asPath === "/about" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -260,7 +260,7 @@ export default function Navbar() {
               </svg>
             )}
         </Link>
-        <Link
+        {/* <Link
             href="/techstack"
             className={`text-base  ${
               router.asPath === "/techstack"
@@ -284,18 +284,18 @@ export default function Navbar() {
                 />
               </svg>
             )}
-          </Link>
+          </Link> */}
         <Link
-          href="/experience"
+          href="/about"
           // className=" flex flex-row text-base font-normal text-gray-600 dark:text-gray-300"
           className={`text-base  ${
-              router.asPath === "/experience"
+              router.asPath === "/about"
                 ? "text-black font-bold dark:text-gray-400"
                 : "text-gray-900 dark:text-gray-300 font-normal "
             }`}
         >
-          Experience
-          {router.asPath === "/experience" && (
+          About
+          {router.asPath === "/about" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
