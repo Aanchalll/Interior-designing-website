@@ -16,7 +16,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
   };
   //className=" bg-[#d4a59a]"
   return (
-    <div className=" ">
+    <div className=" h-[100vh]">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -47,7 +47,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <main className="dark:bg-gray-800 flex flex-col justify-between  min-w-full ">
+      <main className="dark:bg-gray-800 flex flex-col justify-between   min-w-full ">
         {/* min-w-full h-[100vh]   */}
         <Navbar />
         <div>{children}
