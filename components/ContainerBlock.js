@@ -10,13 +10,13 @@ export default function ContainerBlock({ children, ...customMeta }) {
   const meta = {
     title: "Arpan Decores",
     description: `I've been developing websites for 5 years straight. Get in touch with me to know more.`,
-    image: "/avatar.svg",//"/avatar.png"
+    image: "/avatar.svg", //"/avatar.png"
     type: "website",
     ...customMeta,
   };
-  //className=" bg-[#d4a59a]"
+  //className=" bg-[#d4a59a]"dark:bg-gray-800
   return (
-    <div className=" ">
+    <div>
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -29,10 +29,13 @@ export default function ContainerBlock({ children, ...customMeta }) {
           rel="canonical"
           href={`https://yourwebsite.com${router.asPath}`}
         />
-         <link rel="shortcut icon" href="../images/favicon-icon.ico" />
-         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Julee&family=Kalam:wght@300&display=swap" rel="stylesheet"/>
+        <link rel="shortcut icon" href="../images/favicon-icon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Julee&family=Kalam:wght@300&display=swap"
+          rel="stylesheet"
+        />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Aanchal Sahu" />
         <meta property="og:description" content={meta.description} />
@@ -47,12 +50,19 @@ export default function ContainerBlock({ children, ...customMeta }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <main className="dark:bg-gray-800 flex flex-col justify-between h-[100vh]  min-w-full ">
-        {/* min-w-full h-[100vh]   */}
-        <Navbar />
-        <div>{children}
-      </div>
-        <Footer />
+      {/* h-[100vh] */}
+      <main className=" flex flex-col justify-between  h-full min-w-full ">
+        <div className="-z-50 object-cover fixed h-full">
+          <video autoPlay loop muted className=" width-100  object-cover ">
+            <source src="/background-video4.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div className="absolute w-full h-full">
+          <Navbar />
+          <div>{children}</div>
+          <Footer />
+        </div>
       </main>
     </div>
   );
