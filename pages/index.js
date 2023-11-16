@@ -13,12 +13,8 @@ export default function Home({ repositories }) {
     <ContainerBlock
       title="Arpan Decores"
       description="This is a template built specifically for my blog - Creating a developer portfolio that gets you a job."
-     
     >
-{/* <button  onClick={()=>{setFire(!fire)}}>fIRE!</button> */}
       <Hero />
-      {/* <FavouriteProjects /> */}
-      {/* <LatestCode repositories={repositories} /> */}
     </ContainerBlock>
   );
 }
