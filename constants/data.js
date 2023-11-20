@@ -44,7 +44,7 @@ const userData = {
       imgUrl: "/Java.jpg",
     },
   ],
-  projects: [
+  designs: [
     {
       title: "Tailwind Master Kit",
       link: "https://tailwindmasterkit.com",

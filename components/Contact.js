@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import userData from "@constants/data";
 
 export default function Contact() {
-  const [data, setData] = useState({ email: 'aanchal@gamil.com' })
+  // const [data, setData] = useState({ email: 'aanchal@gamil.com' })
 
   // const saveOnClick = async (event) => {
   //  const {email}=data
