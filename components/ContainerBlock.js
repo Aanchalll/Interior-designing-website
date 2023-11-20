@@ -51,18 +51,18 @@ export default function ContainerBlock({ children, ...customMeta }) {
         )}
       </Head>
       {/* h-[100vh] */}
-      <main className=" flex flex-col justify-between  h-full min-w-full ">
-        <div className="-z-50 object-cover fixed h-full">
-          <video autoPlay loop muted className=" width-100  object-cover ">
-            <source src="/background-video4.mp4" type="video/mp4" />
+      <main className=" flex flex-col justify-between  h-full w-full ">
+        <div className="-z-50 object-cover fixed h-full w-full">
+          <video autoPlay loop muted className="  object-cover ">
+            <source src={"/ArpanDecores.mp4"} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="absolute w-full h-full">
+        {/* <div className="absolute w-full h-full">
           <Navbar />
           <div>{children}</div>
           <Footer />
-        </div>
+        </div> */}
       </main>
     </div>
   );
