@@ -53,7 +53,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
       {/* h-[100vh] */}
       <main className=" flex flex-col justify-between  h-full w-full ">
         <div className="-z-50 object-cover fixed h-full w-full">
-          <video autoPlay loop muted playsInline className="  object-cover ">
+          <video autoPlay loop muted playsInline controls={false} className="  object-cover ">
             <source src={"/ArpanDecores.mp4"} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
